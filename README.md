@@ -4,7 +4,7 @@ XSLT 2.0 stylesheet to transform JSON as text to XML representation of JSON.
 Loosely offering functionality available in XSLT 3.0 fn:json-to-xml() where this is not natively available in XSLT 2.0. Note this approach is XSLT stylesheet based rather than XSLT function. A stylesheet input file is not required. Configure and call initial template name "main". 
 http://www.w3.org/TR/xpath-functions-31/#func-json-to-xml
     
-In a round-robin way, the main stylesheet has no input, we pass a param to the path location for JSON file as input, we read that as unparsed-text, and then serialise that from JSON as text to an JSON AST as XML. It is then easy to complete regular XSLT activity to transform JSON AST XML to XML representation of JSON. 
+In a round-robin way, the main stylesheet has no input, we pass a param to the path location for JSON file as input, we read that as unparsed-text, and then serialise that from JSON as text to a JSON AST as XML. It is then easy to complete regular XSLT activity to transform JSON AST XML to XML representation of JSON. 
     
 The stylesheet output can be validated against the same schema as used for the XML representation of JSON used as the target for the function fn:json-to-xml(). 
     
